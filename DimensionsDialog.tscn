@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/DimensionsDialog.gd" type="Script" id=1]
+
+[node name="CreateNewImage" type="ConfirmationDialog"]
+margin_right = 200.0
+margin_bottom = 70.0
+script = ExtResource( 1 )
+_path_width_edit = NodePath("VBoxContainer/WidthCont/WidthEdit")
+_path_height_edit = NodePath("VBoxContainer/HeightCont/HeightEdit")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 192.0
+margin_bottom = 78.0
+
+[node name="ImageSize" type="Label" parent="VBoxContainer"]
+margin_right = 184.0
+margin_bottom = 14.0
+text = "Image Size"
+
+[node name="WidthCont" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 18.0
+margin_right = 184.0
+margin_bottom = 42.0
+
+[node name="WidthLabel" type="Label" parent="VBoxContainer/WidthCont"]
+margin_top = 5.0
+margin_right = 46.0
+margin_bottom = 19.0
+text = "Width: "
+
+[node name="WidthEdit" type="LineEdit" parent="VBoxContainer/WidthCont"]
+margin_left = 50.0
+margin_right = 108.0
+margin_bottom = 24.0
+text = "64"
+
+[node name="HeightCont" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 46.0
+margin_right = 184.0
+margin_bottom = 70.0
+
+[node name="Height" type="Label" parent="VBoxContainer/HeightCont"]
+margin_top = 5.0
+margin_right = 46.0
+margin_bottom = 19.0
+text = "Height:"
+
+[node name="HeightEdit" type="LineEdit" parent="VBoxContainer/HeightCont"]
+margin_left = 50.0
+margin_right = 108.0
+margin_bottom = 24.0
+text = "64"

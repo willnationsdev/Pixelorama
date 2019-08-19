@@ -11,9 +11,9 @@ func _input(event) -> void:
 			drag = true
 		elif event.is_action_released("camera_drag"):
 			drag = false
-		elif event.is_action_pressed("zoom_in"): # Wheel Up Event
+		elif event.is_action_pressed("zoom_in"):
 			zoom_camera(-1)
-		elif event.is_action_pressed("zoom_out"): # Wheel Down Event
+		elif event.is_action_pressed("zoom_out"):
 			zoom_camera(1)
 		elif event is InputEventMouseMotion && drag:
 			offset = offset - event.relative * zoom

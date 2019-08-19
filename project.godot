@@ -13,15 +13,9 @@ _global_script_classes=[ {
 "class": "Canvas",
 "language": "GDScript",
 "path": "res://Scripts/Canvas.gd"
-}, {
-"base": "Node2D",
-"class": "CanvasOLD",
-"language": "GDScript",
-"path": "res://Scripts/Old/Canvas.gd"
 } ]
 _global_script_class_icons={
-"Canvas": "",
-"CanvasOLD": ""
+"Canvas": ""
 }
 
 [application]

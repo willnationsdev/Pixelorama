@@ -25,7 +25,7 @@ func _ready() -> void:
 	#The sprite itself
 	if !current_sprite:
 		current_sprite = Image.new()
-		current_sprite.create(size.x, size.y, false, Image.FORMAT_RGBA8)
+		current_sprite.create(int(size.x), int(size.y), false, Image.FORMAT_RGBA8)
 	
 	current_sprite.lock()
 	var tex := ImageTexture.new()
